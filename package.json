@@ -1,0 +1,16 @@
+{
+  "name": "vuepress-plugin-musicplayer",
+  "version": "1.0.2",
+  "description": "plugin for vuepress music player",
+  "keywords": [
+    "vuepress-music-player",
+    "vuepress",
+    "web音乐播放器"
+  ],
+  "main": "index.js",
+  "author": "前端有道",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "license": "MIT"
+}
