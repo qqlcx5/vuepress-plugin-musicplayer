@@ -3,9 +3,9 @@
   "version": "1.0.2",
   "description": "plugin for vuepress music player",
   "keywords": [
-    "vuepress-music-player",
     "vuepress",
-    "web音乐播放器"
+    "音乐播放器",
+    "vuepress-plugin-musicplayer"
   ],
   "main": "index.js",
   "author": "前端有道",
