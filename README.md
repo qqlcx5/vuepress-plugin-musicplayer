@@ -22,3 +22,4 @@ module.exports = {
 ## contact
 
 - 联系微信: qqlcx55
+- 微信公众号: 前端有道

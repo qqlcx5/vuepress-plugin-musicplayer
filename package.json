@@ -7,6 +7,16 @@
     "音乐播放器",
     "vuepress-plugin-musicplayer"
   ],
+  "homepage": "https://github.com/qqlcx5",
+  "repository": {
+    "url": "https://github.com/qqlcx5/vuepress-plugin-musicplayer"
+  },
+  "bugs": {
+    "url": "https://github.com/qqlcx5/vuepress-plugin-musicplayer/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "author": "前端有道",
   "dependencies": {
