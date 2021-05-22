@@ -413,10 +413,12 @@
     height: 100%;
     position: absolute;
     z-index: -1;
-    background-color: rgba(26,24,28,0.5);
+    /* background-color: rgba(26,24,28,0.5); */
+    background: #1989fa;
 }
 ._list li:hover{
     background-color: rgba(26,24,28,0.3);
+    /* background: #1989fa; */
 }
 ._list li span,.music_ul_title span{
     display: block;
