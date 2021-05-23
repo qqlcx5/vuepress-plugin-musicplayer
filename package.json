@@ -1,7 +1,13 @@
 {
   "name": "vuepress-plugin-musicplayer",
-  "version": "1.1.3",
+  "version": "1.1.5",
+  "main": "index.js",
+  "author": "前端有道",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
   "description": "plugin for vuepress music player",
+  "license": "MIT",
   "keywords": [
     "音乐",
     "music",
@@ -18,11 +24,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "main": "index.js",
-  "author": "前端有道",
-  "dependencies": {
-    "jquery": "^3.5.1"
-  },
-  "license": "MIT"
+  }
 }
