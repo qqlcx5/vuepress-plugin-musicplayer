@@ -375,7 +375,7 @@ export default {
         })
         .catch(err => {
           console.log('getMusicUrl err')
-          this._getInfo()
+          this._getMusicTypeList()
         })
     },
     Ltrim(s) {
