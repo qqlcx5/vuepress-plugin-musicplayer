@@ -127,6 +127,7 @@ export default {
       talkicon2: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.1/image/talkicon2.png',
       playIcon: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.1/image/pause.png',
       playState: true,
+      defaultIndex: 4,
       musicImg: '',
       musicUrl: '',
       musicWords: [],
@@ -276,7 +277,7 @@ export default {
       getAllList().then(res => {
         let list = res.data.list.map(({ id, name }) => ({ id, name }))
         list = this.isAllRank ? list : list.splice(0, 5)
-        let random = Math.floor(Math.random() * (list.length + 1)) || 1
+        let random = this.defaultIndex || Math.floor(Math.random() * (list.length + 1)) || 1
         list.unshift({ name: '收藏歌单', id: -1 })
         this.musicTypeList = list
         !this.isPlayMyMusic && this._getMusicType(list[random].id)
@@ -306,7 +307,7 @@ export default {
           }
         } else {
           getPlaylistDetail(id).then(res => {
-            let list = res.data.playlist.trackIds.map(({ id, name }) => id)
+            let list = res.data.playlist.trackIds.map(({ id }) => id)
             let id = list.join()
             this._getSongDetail(id)
           })
