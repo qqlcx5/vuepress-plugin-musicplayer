@@ -4,7 +4,7 @@
 
 musicplayer plugin for vuepress theme.
 
-是一款基于网易云API和`zw-player`播放器魔改来的。
+是一款基于网易云API和`zw-player`播放器，对一部分样式和功能作调整，如果后续API失效没有及时调整可以自己传入API地址。
 
 ## How to use
 
@@ -17,12 +17,14 @@ module.exports = {
   
   plugins: [
     ['vuepress-plugin-musicplayer', {
-      isAllRank: true
+      showAllRank: true, // 默认 false
+      baseUrl: 'https://netease-cloud-music-api-seven-olive.vercel.app/', // 默认
     }],
   ]
 }
 ```
--  `isAllRank` 展示所有排名歌单，默认`false`
+-  `showAllRank` 展示所有排名歌单，默认 `false`
+-  `baseUrl` 网易云API
 
 ## Tip
 

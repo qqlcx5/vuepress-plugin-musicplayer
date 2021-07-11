@@ -157,7 +157,7 @@ export default {
       //新增歌词评论
       hotTalkList: [],
       isPlayMyMusic: false, // 播放收藏歌单
-      isAllRank: ISALLRANK, // 展示所有榜单
+      showAllRank: SHOWALLRANK, // 展示所有榜单
     }
   },
   mounted() {
@@ -276,7 +276,7 @@ export default {
     _getMusicTypeList() {
       getAllList().then(res => {
         let list = res.data.list.map(({ id, name }) => ({ id, name }))
-        list = this.isAllRank ? list : list.splice(0, 5)
+        list = this.showAllRank ? list : list.splice(0, 5)
         let random = this.defaultIndex || Math.floor(Math.random() * (list.length + 1)) || 1
         list.unshift({ name: '收藏歌单', id: -1 })
         this.musicTypeList = list
