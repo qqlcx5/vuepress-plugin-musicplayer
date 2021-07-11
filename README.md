@@ -18,7 +18,7 @@ module.exports = {
   plugins: [
     ['vuepress-plugin-musicplayer', {
       showAllRank: true, // 默认 false
-      baseUrl: 'https://netease-cloud-music-api-ghielgeia-qqlcx5.vercel.app/', // 默认
+      baseUrl: 'https://netease-cloud-music-api-9uegqsos0-qqlcx5.vercel.app/', // 默认
     }],
   ]
 }
