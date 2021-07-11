@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-musicplayer",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "main": "index.js",
   "author": "前端有道",
   "dependencies": {

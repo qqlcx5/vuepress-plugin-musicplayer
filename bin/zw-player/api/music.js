@@ -1,6 +1,6 @@
 import axios from 'axios'
 //获取歌词
-let baseUrl = BASEURL || 'https://netease-cloud-music-api-9uegqsos0-qqlcx5.vercel.app/'
+let baseUrl = BASEURL || 'https://netease-cloud-music-api-qqlcx5.vercel.app/'
 export const getWords=(id)=>{
     return axios.get(`${baseUrl}lyric?id=${id}`);
 }
